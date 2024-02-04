@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer base {
+  .backgroundImage {
+    background-image: url(../image/noaa-zuEGkXnH4y4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+}

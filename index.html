@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+    <link rel="stylesheet" href="./output/style.css" />
+  </head>
+  <body
+    class="bg-gradient-to-r from-[#ea2c62] to-[#120078] font-[Arial] w-[100%] h-[100vh] flex justify-center items-center"
+  >
+    <div
+      class="backgroundImage flex justify-center items-center flex-col w-[100%] max-w-[320px] h-[80vh]"
+    >
+      <div class="w-[100%] text-center container top">
+        <h1 class="text-white leading-[70px] font-extrabold text-[1.4rem]">
+          WeatherApp
+        </h1>
+        <form action="" onsubmit="return false">
+          <input
+            type="text"
+            class="bg-slate-800 search rounded-tl-2xl rounded-br-2xl text-center block w-[80%] my-0 mx-auto mb-3 p-2 outline-none border-b-4 border-b-green-600 focus:text-white focus:text-[15px]"
+            placeholder="search by city name"
+          />
+          <button
+            type="submit"
+            class="btn block w-[80%] my-0 mx-auto p-2 outline-none border-none bg-[#db6400] text-white font-semibold uppercase rounded-lg cursor-pointer transition-all duration-300 hover:bg-[#b05102]"
+          >
+            Submit
+          </button>
+          <p class="error text-red-500 my-2 text-[1.2rem]"></p>
+        </form>
+        <section>
+          <div class="container">
+            <div class="icon text-center pt-4">
+              <img src="" alt="" class="weather-icon mx-auto w-14 bg-cover" />
+            </div>
+            <div class="location pb-4 text-center text-white leading-4">
+              <div class="city text-[20px] font-bold">New York, US</div>
+              <div class="date py-3"></div>
+            </div>
+            <div
+              class="current w-[100%] text-left p-1 leading-9 font-bold relative text-white pt-3 border-t-2 border-t-white"
+            >
+              <div class="temp">Temp: 25 <span>°C</span></div>
+
+              <div class="weather">Weather: Sunny</div>
+              <div class="temp-range">TempRange: 10°C / 15°C</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
